@@ -47,6 +47,9 @@
 					<target>
 						<file>../target-platform/target-platform.target</file>
 					</target>
+					<!-- Some target bundles, such as the EPP package, need a newer Java than the
+						 Corrosion bundles. Do not use the Java version of the bundles to resolve the target. -->
+					<resolveWithExecutionEnvironmentConstraints>false</resolveWithExecutionEnvironmentConstraints>
 					<environments>
 						<environment>
 							<os>linux</os>
